@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form" action="/login" method="post">
+            <div class="form-input">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="input-field" required>
+            </div>
+            <div class="form-input">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="input-field" required>
+            </div>
+            <div class="form-input">
+                <input type="submit" id="login" value="Login">
+            </div>
+            <div id="verification" style="display: none;">
+                <label for="code">Verification Code:</label>
+                <div class="code-container">
+                    <input type="text" id="code1" class="code" style="width: 20px" maxlength="1" required>
+                    <input type="text" id="code2" class="code" style="width: 20px" maxlength="1" required>
+                    <input type="text" id="code3" class="code" style="width: 20px" maxlength="1" required>
+                    <input type="text" id="code4" class="code" style="width: 20px" maxlength="1" required>
+                </div>
+                <div class="form-input">
+                    <input type="submit" id="verify" value="Verify">
+                </div>
+            </div>
+        </form>
+        <p>Don't have an account? <a href="../public/register.html">Register here</a>.</p>
+    </div>
+    <script src="js/verify.js"></script>
+</body>
+</html>

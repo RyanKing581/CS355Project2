@@ -1,0 +1,2 @@
+- Implement at least 5 coursera stuff
+- We still have to create a way to have users store their blog information into MongoDB and have it running on the website
